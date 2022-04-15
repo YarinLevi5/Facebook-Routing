@@ -1,0 +1,8 @@
+Advantages of 'use strict' -
+👍 It restricts features that are unclear or poorly thought out
+👍 Makes it easier to write “secure” JavaScript code
+👍 Repairs mistakes that make it difficult for JavaScript
+👍 It restricts features that are unclear or poorly thought out.
+
+Disadvantages of 'use strict' -
+👎 
