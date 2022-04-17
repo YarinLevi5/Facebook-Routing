@@ -1,8 +1,10 @@
 import { Ad } from './ad';
 import { Post } from './post';
-import { Facebook } from './facebook';
-export class Feed extends Facebook {
+export class Feed {
+  ads: Ad[];
+  posts: Post[];
   constructor(posts: Post[], ads: Ad[]) {
-    super(posts, ads, [], []);
+    this.ads = ads;
+    this.posts = posts;
   }
 }

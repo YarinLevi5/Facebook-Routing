@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,2BAAI,CACZ,AAAA,GAAG,AAAC,CACF,gBAAgB,CAAE,OAAO,CACzB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CACpB,AACD,AAAA,IAAI,AAAC,CACH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACb",
+    "sources": [
+        "ad-component.component.scss"
+    ],
+    "names": [],
+    "file": "ad-component.component.css"
+}

@@ -1,36 +1,33 @@
 import { Feed } from './feed';
 import { Post } from './post';
-import { Ad } from './ad';
-export class User extends Feed {
+
+export class User {
+  id: string = '1';
   name: string;
   age: number;
   email: string;
   password: string = '123456';
   birthday: Date;
+  feed: Feed[];
   userPosts: Post[];
+
   constructor(
+    id: string,
     name: string,
     age: number,
     email: string,
     password: string,
     birthday: Date,
-    posts: Post[],
-    ads: Ad[],
+    feed: Feed[],
     userPosts: Post[]
   ) {
-    super(posts, ads);
+    this.id = id
     this.name = name;
     this.age = age;
     this.email = email;
-    this.setPassword(password);
+    this.password = password;
     this.birthday = birthday;
+    this.feed = feed;
     this.userPosts = userPosts;
-  }
-  setPassword(password: string) {
-    if (password.length < 6) {
-      throw new Error('Password must be at least 6 characters long');
-    } else {
-      this.password = password;
-    }
   }
 }
