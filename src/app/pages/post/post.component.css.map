@@ -2,12 +2,12 @@
     "version": 3,
     "mappings": "AACA,AAAA,KAAK,AAAC,CGEJ,gBAAgB,CDHL,OAAO,CCIlB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CHHpB,AACD,AAAA,IAAI,AAAC,CGKH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CHJb",
     "sources": [
-        "user-component.component.scss",
-        "../../styles.scss",
-        "../../sass/_variables.scss",
-        "../../sass/mixins.scss",
-        "../../sass/_variables.scss"
+        "post.component.scss",
+        "../../../styles.scss",
+        "../../../sass/_variables.scss",
+        "../../../sass/mixins.scss",
+        "../../../sass/_variables.scss"
     ],
     "names": [],
-    "file": "user-component.component.css"
+    "file": "post.component.css"
 }

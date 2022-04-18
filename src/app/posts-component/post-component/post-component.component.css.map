@@ -1,8 +1,12 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,AAAC,CACJ,gBAAgB,CAAE,OAAO,CACzB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CACpB,AACD,AAAA,IAAI,AAAC,CACH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACb",
+    "mappings": "AAEA,AAAA,KAAK,AAAC,CGCJ,gBAAgB,CDHL,OAAO,CCIlB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CHFpB,AACD,AAAA,IAAI,AAAC,CGIH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CHHb",
     "sources": [
-        "post-component.component.scss"
+        "post-component.component.scss",
+        "../../../styles.scss",
+        "../../../sass/_variables.scss",
+        "../../../sass/mixins.scss",
+        "../../../sass/_variables.scss"
     ],
     "names": [],
     "file": "post-component.component.css"

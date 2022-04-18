@@ -1,9 +1,8 @@
 <div class="user">
-  <p>{{ user.id }}</p>
-  <p>{{ user.name }}</p>
-  <p>{{ user.email }}</p>
-  <p>{{ user.age }}</p>
-  <p>{{ user.password }}</p>
-  <p>{{ user.birthday | date: "short" }}</p>
-  <app-feeds-component [feeds]="user.feed"></app-feeds-component>
+  <h1>User with Id= {{ user.id }}</h1>
+  <p><span>Name:</span>{{ user.name }}</p>
+  <p><span>Email:</span> {{ user.email }}</p>
+  <p><span>Age:</span> {{ user.age }}</p>
+  <p><span>Password:</span> {{ user.password }}</p>
+  <p><span>Birthday:</span> {{ user.birthday | date: "short" }}</p>
 </div>

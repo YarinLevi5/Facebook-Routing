@@ -9,7 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UserComponentComponent implements OnInit {
   @Input() user: User = new User('', '', 0, '', '', new Date(), [], []);
-
+  constructor(private userService: UserService, private route: ActivatedRoute) {
+    let id = this.route.snapshot.paramMap.get('id');
+    this.user = this.userService.getUserById(id ?? '');
+  }
   ngOnInit(): void {
 
   }

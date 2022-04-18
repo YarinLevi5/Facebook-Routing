@@ -1,10 +1,8 @@
+@import "../../../styles.scss";
+
 .post {
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  padding: 20px;
-  margin-bottom: 20px;
+  @include simpleStyle;
 }
 span {
-  color: green;
-  margin: 10px;
+  @include spanStyle;
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Post } from '../entities/post';
 import { User } from '../entities/user';
 @Injectable({
   providedIn: 'root',
@@ -28,6 +29,12 @@ export class UserService {
                 title: 'post1',
                 time: new Date(),
                 content: 'content number 1',
+              },
+              {
+                id: '2',
+                title: 'post1',
+                time: new Date(),
+                content: 'content number 1',
               }
             ]
           }
@@ -36,8 +43,14 @@ export class UserService {
           {
             id: '1',
             time: new Date(),
-            title: 'post 1',
-            content: 'post 1 content',
+            title: 'post 7',
+            content: 'post 7 content',
+          },
+          {
+            id: '2',
+            time: new Date(),
+            title: 'post 44',
+            content: 'post 44 content',
           },
         ],
       },
@@ -59,7 +72,13 @@ export class UserService {
             ],
             posts: [
               {
-                id: "2",
+                id: "3",
+                title: 'post number 2',
+                time: new Date(),
+                content: 'content number 2',
+              },
+              {
+                id: "4",
                 title: 'post number 2',
                 time: new Date(),
                 content: 'content number 2',
@@ -74,6 +93,12 @@ export class UserService {
             title: 'post 1',
             content: 'post 1 content',
           },
+          {
+            id: '2',
+            time: new Date(),
+            title: 'post 2',
+            content: 'post 2 content',
+          },
         ],
       },
     ];
@@ -84,5 +109,8 @@ export class UserService {
   }
   getUserById(userId: string): User {
     return this.users.find(user => user.id === userId) ?? new User('', '', 0, '', '', new Date(), [], []);
+  }
+  getPostById(postId: string): any {
+    return this.users.forEach(user => user.feed.forEach(item => item.posts.find(post => post.id === postId)))
   }
 }

@@ -1,8 +1,12 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,2BAAI,CACZ,AAAA,GAAG,AAAC,CACF,gBAAgB,CAAE,OAAO,CACzB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CACpB,AACD,AAAA,IAAI,AAAC,CACH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACb",
+    "mappings": "AAEA,AAAA,GAAG,AAAC,CGCF,gBAAgB,CDHL,OAAO,CCIlB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CHFpB,AACD,AAAA,IAAI,AAAC,CGIH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CHHb",
     "sources": [
-        "ad-component.component.scss"
+        "ad-component.component.scss",
+        "../../../styles.scss",
+        "../../../sass/_variables.scss",
+        "../../../sass/mixins.scss",
+        "../../../sass/_variables.scss"
     ],
     "names": [],
     "file": "ad-component.component.css"

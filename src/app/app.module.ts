@@ -12,6 +12,10 @@ import { PostComponentComponent } from './posts-component/post-component/post-co
 import { AdsComponentComponent } from './ads-component/ads-component.component';
 import { PostsComponentComponent } from './posts-component/posts-component.component';
 import { FeedsComponentComponent } from './feeds-component/feeds-component.component';
+import { PostByUserComponent } from './pages/postsByUser/postByUser.component';
+import { UserPostsComponent } from './user-posts/user-posts.component';
+import { UserPostComponent } from './user-posts/user-post/user-post.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { FeedsComponentComponent } from './feeds-component/feeds-component.compo
     PostComponentComponent,
     AdsComponentComponent,
     PostsComponentComponent,
-    FeedsComponentComponent
+    FeedsComponentComponent,
+    PostByUserComponent,
+    UserPostsComponent,
+    UserPostComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

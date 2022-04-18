@@ -1,0 +1,7 @@
+@import "../../styles.scss";
+.user {
+  @include simpleStyle;
+}
+span {
+  @include spanStyle;
+}

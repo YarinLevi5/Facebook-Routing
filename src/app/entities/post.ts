@@ -9,6 +9,6 @@ export class Post {
     this.title = title;
     this.content = content;
     this.image = image;
-    this.time = new Date();
+    this.time = time
   }
 }

@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,AAAC,CGCR,gBAAgB,CDHL,OAAO,CCIlB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CHFpB,AACD,AAAA,IAAI,AAAC,CGIH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CHHb",
+    "sources": [
+        "user-post.component.scss",
+        "../../../styles.scss",
+        "../../../sass/_variables.scss",
+        "../../../sass/mixins.scss",
+        "../../../sass/_variables.scss"
+    ],
+    "names": [],
+    "file": "user-post.component.css"
+}
