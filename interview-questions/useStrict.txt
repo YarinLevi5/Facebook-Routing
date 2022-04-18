@@ -1,8 +1,47 @@
-Advantages of 'use strict' -
+# Advantages of 'use strict' -
 👍 It restricts features that are unclear or poorly thought out
 👍 Makes it easier to write “secure” JavaScript code
 👍 Repairs mistakes that make it difficult for JavaScript
 👍 It restricts features that are unclear or poorly thought out.
 
-Disadvantages of 'use strict' -
-👎 
+# Disadvantages of 'use strict' -
+👎 code mixed strict and “normal” modes
+👎 strict mode stops you from doing certain things
+
+# Differences between ES6 class and ES5 function constructors:
+✍️ ES6-
+1. It ensures that this keyword used by the developer is referring to the object being created by the developer.  
+2.  ES6 class constructors creates objects by adding function to their prototypes
+
+✍️ ES5- 
+1. ES5 function constructors also create objects along with inheritance property. 
+2. Any function can be used as a function constructor and it primarily focuses on the creation of reusable object creation code.
+
+# Comparing two objects in JavaScript : 
+Entries- Object method , that create array with the key and value of object.  
+let a={name:'yarin'}
+let b={name:'yarin'}
+Object.entries(a).toString()===Object.entries(b).toString()
+
+# Removing duplicates from an array using ES6 : 
+let arrayOfNumbers= [1,1,33,7,2,7,33]
+let byeDuplicates= [...new Set(array)];
+
+#Check if a given string is a isomorphic
+let name1= "yarin"
+let name2= "ariyn"
+
+function isomorphic(name1='',name2=''){
+    if(name1.length !== name2.length){
+        return false
+    }
+    for(let i=0;i<name1.length;i++){
+        let output1 = name1.indexOf(name1[i])
+        let output2 = name2.indexOf(name2[i])
+        if(name1[output2] !== name1[i] || name2[output1] !== name2[i]){
+            return false
+        }
+        return true
+    }
+}
+isomorphic(name1, name2)

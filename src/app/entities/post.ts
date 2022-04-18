@@ -11,4 +11,5 @@ export class Post {
     this.image = image;
     this.time = time
   }
+
 }
