@@ -1,6 +1,6 @@
-<h1>Post with Id= {{ post.id }}</h1>
 <div class="post">
+  <h1>Post with Id= {{ post.id }}</h1>
   <p><span>Title:</span> {{ post.title }}</p>
   <p><span>Content:</span> {{ post.content }}</p>
-  <p><span>Time: </span>{{ post.time }}</p>
+  <p><span>Time: </span>{{ post.time | date: "long" }}</p>
 </div>

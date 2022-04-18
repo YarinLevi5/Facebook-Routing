@@ -16,7 +16,7 @@ import { PostByUserComponent } from './pages/postsByUser/postByUser.component';
 import { UserPostsComponent } from './user-posts/user-posts.component';
 import { UserPostComponent } from './user-posts/user-post/user-post.component';
 import { UsersComponent } from './users/users.component';
-
+import { PostById } from './pages/postById/post.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +33,8 @@ import { UsersComponent } from './users/users.component';
     PostByUserComponent,
     UserPostsComponent,
     UserPostComponent,
-    UsersComponent
+    UsersComponent,
+    PostById
   ],
   imports: [
     BrowserModule,

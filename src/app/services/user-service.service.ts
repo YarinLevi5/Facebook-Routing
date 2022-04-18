@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { retry } from 'rxjs';
 import { Post } from '../entities/post';
 import { User } from '../entities/user';
 @Injectable({
@@ -34,10 +35,11 @@ export class UserService {
                 id: '2',
                 title: 'post1',
                 time: new Date(),
-                content: 'content number 1',
+                content: 'content number 2',
               }
             ]
           }
+
         ],
         userPosts: [
           {
@@ -73,15 +75,15 @@ export class UserService {
             posts: [
               {
                 id: "3",
-                title: 'post number 2',
+                title: 'post number 3',
                 time: new Date(),
                 content: 'content number 2',
               },
               {
                 id: "4",
-                title: 'post number 2',
+                title: 'post number 4',
                 time: new Date(),
-                content: 'content number 2',
+                content: 'content number 4',
               }
             ]
           }
@@ -110,7 +112,15 @@ export class UserService {
   getUserById(userId: string): User {
     return this.users.find(user => user.id === userId) ?? new User('', '', 0, '', '', new Date(), [], []);
   }
-  getPostById(postId: string): any {
-    return this.users.forEach(user => user.feed.forEach(item => item.posts.find(post => post.id === postId)))
+  getPostById(postId: string): Post {
+    let postsArray: any = []
+    this.users.forEach(user => {
+      user.feed.forEach(feed => {
+        feed.posts.forEach(post => {
+          postsArray.push(post)
+        })
+      })
+    })
+    return postsArray.find((post: { id: string }) => post.id === postId) ?? new Post('', '', '', '', new Date());
   }
 }
