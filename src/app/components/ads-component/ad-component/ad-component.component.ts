@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Ad } from '../../entities/ad';
-
+import { Ad } from 'src/app/classes/ad';
 @Component({
   selector: 'app-ad-component',
   templateUrl: './ad-component.component.html',

@@ -1,9 +1,9 @@
-import { UsersComponent } from './users/users.component';
+import { UsersComponent } from './components/users/users.component';
 import { PostByUserComponent } from './pages/postsByUser/postByUser.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { UserComponent } from './pages/user/user.component';
+import { UserComponent } from './components/users/user/user.component';
 import { FeedComponent } from './pages/feed/feed.component';
 import { PostById } from './pages/postById/post.component';
 

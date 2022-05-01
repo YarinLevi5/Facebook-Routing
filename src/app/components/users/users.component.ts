@@ -1,6 +1,6 @@
 import { UserService } from 'src/app/services/user-service.service';
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from '../entities/user';
+import { User } from 'src/app/classes/user';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',

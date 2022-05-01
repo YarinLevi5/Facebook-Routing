@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/services/user-service.service';
-import { Post } from 'src/app/entities/post';
+import { Post } from 'src/app/classes/post';
 
 @Component({
   selector: 'app-postById',

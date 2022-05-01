@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Feed } from '../../entities/feed';
+import { Feed } from 'src/app/classes/feed';
 @Component({
   selector: 'app-feed-component',
   templateUrl: './feed-component.component.html',

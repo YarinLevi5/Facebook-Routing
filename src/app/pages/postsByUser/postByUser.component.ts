@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { User } from 'src/app/entities/user';
+import { User } from 'src/app/classes/user';
 import { UserService } from 'src/app/services/user-service.service';
 import { ActivatedRoute } from '@angular/router';
 @Component({

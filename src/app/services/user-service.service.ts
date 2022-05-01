@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { retry } from 'rxjs';
-import { Post } from '../entities/post';
-import { User } from '../entities/user';
+import { Post } from '../classes/post';
+import { User } from '../classes/user';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -123,5 +123,6 @@ export class UserService {
       })
     })
     return postsArray.find((post: { id: string }) => post.id === postId) ?? new Post('', '', '', '', new Date());
+
   }
 }

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from 'src/app/entities/user';
 import { UserService } from 'src/app/services/user-service.service';
 import { ActivatedRoute } from '@angular/router';
+import { User } from 'src/app/classes/user';
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',

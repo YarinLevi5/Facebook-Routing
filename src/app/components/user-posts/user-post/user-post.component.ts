@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Post } from 'src/app/entities/post';
+import { Post } from 'src/app/classes/post';
 @Component({
   selector: 'app-user-post',
   templateUrl: './user-post.component.html',
